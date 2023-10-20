@@ -54,10 +54,39 @@ public class Main {
         while (sum1 < targetSum1) {
             sum1 += (sum1 * 0.07);
             months1++;
-            if (months1 % 6 == 0){
-                System.out.println("Месяц : " + months1 + ", Сумма: " +sum1);
+            if (months1 % 6 == 0) {
+                System.out.println("Месяц : " + months1 + ", Сумма: " + sum1);
             }
+        }
 
+        System.out.println("Задача6");
+        double money = 15000;
+        int period = 6;
+        int years = 9;
+        int allMonth = years * 12;
+        double bankPercent = 0.07;
+        for (int i11 = 0; i <= allMonth; i++) {
+            money = money + money * bankPercent;
+            if (i11 % period == 0) {
+                System.out.println("Сумма " + money + " , количество месяцев " + allMonth);
+            }
+        }
+        System.out.println("Задача 7");
+        for (int fr = 1; fr < 31; fr += 7) {
+            System.out.println("Сегодня пятница " + fr + " необходимо подготовить отчет");
+        }
+        System.out.println("Задача 8");
+        int currentYear = 2023;
+        for (int i12 = 0; i12 < currentYear + 100; i12 += 79) {
+            if (i12 > currentYear - 200) {
+                System.out.println(i12);
+            }
         }
     }
 }
+
+
+
+
+
+
